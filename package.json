@@ -1,0 +1,14 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "description": "Starter app for new projects",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "pnpm --filter example-server run dev",
+    "db:gen": "pnpm --filter example-server run db:gen"
+  },
+  "keywords": [],
+  "author": "Geordi Dosher",
+  "license": "ISC"
+}
