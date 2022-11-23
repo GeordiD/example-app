@@ -1,0 +1,12 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "description": "An example app intended to be the starter for new projects",
+  "scripts": {
+    "dev:server": "pnpm --filter server run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Geordi Dosher",
+  "license": "ISC"
+}
