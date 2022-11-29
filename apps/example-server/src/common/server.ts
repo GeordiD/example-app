@@ -8,11 +8,14 @@ import { setupAuth } from './auth';
 import * as trpcExpress from '@trpc/server/adapters/express';
 import { appRouter } from '@/app.router';
 import { createContext } from '@/context';
+import cors from 'cors';
 
 const app = express();
 
 export default class ExpressServer {
   constructor() {
+    app.use(cors());
+
     this.setupTrpc();
     this.setupFrontendServer();
     setupAuth();

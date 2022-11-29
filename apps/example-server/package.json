@@ -1,8 +1,9 @@
 {
-  "name": "example-server",
+  "name": "@geordid/example-server",
   "version": "1.1.0",
   "description": "A scaffolded node server meant to be a starting point for new projects",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "node dist/index.js",
     "compile": "ts-node build.ts && tsc && tscpaths -p tsconfig.json -s ./src -o ./dist",
@@ -16,10 +17,11 @@
   },
   "dependencies": {
     "@prisma/client": "^4.6.1",
-    "@trpc/server": "^10.1.0",
+    "@trpc/server": "^10.4.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.2",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-openapi-validator": "^4.13.6",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@jest-mock/express": "^1.4.5",
     "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/express-serve-static-core": "^4.17.31",
     "@types/jest": "^27.4.1",
